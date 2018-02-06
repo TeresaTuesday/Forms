@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p>Please create your account.  Fields marked with * are required.</p>
+    <form>
+        First Name: * <input type="text" name="firstname" required><br>
+        <br>
+        Middle Name: <input type="text" name="middlename"><br>
+        <br>
+        Last Name: * <input type="text" name="lastname" required><br>
+        <br>
+        Email: * <input type="email" name="email" placeholder="name@example.com" required><br>
+        <br>
+        Telephone: (10 digits) * <input type="tel" name="telephone" placeholder="(xxx)-xxx-xxxx" required><br>
+        <br>
+        <label for="bday">Date of Birth: * </label>
+        <input type="date" id="bday" min="1890-01-01" max="2018-02-06" required><br>
+        <br>
+        Password: * <input type="password" name="pwd" placeholder="no spaces" required><br>
+        <br>
+        Confirm Password: * <input type="password" name="pwd" required><br>
+        <br>
+        Security Question:
+        <select name="questions">
+            <option value="firstpet">What is the name of your first pet?</option>
+            <option value="street">What street did you grow up on?</option>
+        </select>
+        <br>
+        Answer: <input type="text" name="security" placeholder="not case sensitive">
+        <br>
+        <br>
+        <button type="button" onclick="alert('Are all the fields correct? Verify fields, and then click Submit button.')">Verify</button>
+        <button type="submit">Submit</button>
+    </form>
+        <p><a href="http://localhost:63342/Forms/LogIn.html?_ijt=taksbjg9mvj0d9pbl1rkgag44v">Go to Login</a>
+        or <a href="http://localhost:63342/Forms/forgotpassword.html?_ijt=nj2vmotdp4pvqobde9ojgf3dq2">Forgot Password</a></p>
+
+
+</body>
+</html>
